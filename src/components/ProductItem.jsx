@@ -1,13 +1,25 @@
 import React from 'react'
 
-function ProductItem({id,gender,price,setAllProducts,allProducts,basket}) {
+function ProductItem({id,gender,price,count,setAllProducts,allProducts,basket}) {
   function handleProducts(){
+    const existingProduct = allProducts.find(i => i.id === id)
     if(basket){
-      setAllProducts(allProducts.filter(i=> i.id!==id))
+        if(existingProduct.count !==1){
+          existingProduct.count -=1;
+          setAllProducts([...allProducts])
+        }
+        else{
+          setAllProducts(allProducts.filter(i=> i.id !==id))
+        }
     }
     else{
-      console.log(id,gender,price)
-      setAllProducts([...new Set([...allProducts,{id:id,gender:gender,price:price}])]) 
+        if (existingProduct) {
+          existingProduct.count += 1
+          setAllProducts([...allProducts])
+        } else {
+          setAllProducts([...allProducts,{id,gender,price,count}])
+        }
+        
     }
 
   }
@@ -19,6 +31,7 @@ function ProductItem({id,gender,price,setAllProducts,allProducts,basket}) {
         <div className='product-info flex'>
             <h4>{gender === 'male' ? "Men's Shirt" : "Women's Dress"}</h4>
             <p>${price}</p>
+            {basket &&  <p>Count: {count}</p>}
         </div>
           <div className='btn-group'>
             <button className='btn' onClick={handleProducts}>{ !basket ? "Add to basket" : "Remove from basket"}</button>
