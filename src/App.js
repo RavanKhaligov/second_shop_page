@@ -13,62 +13,74 @@ function App() {
     {
         id:1,
         gender:"male",
-        price:75
+        price:75,
+        count:1
     },
     {
         id:2,
         gender:"male",
-        price:80
+        price:80,
+        count:1
     },
     {
         id:3,
         gender:"female",
-        price:68
+        price:68,
+        count:1
     },
     {
         id:4,
         gender:"female",
-        price:70
+        price:70,
+        count:1
     },
     {
         id:5,
         gender:"female",
-        price:75
+        price:75,
+        count:1
     },
     {
         id:6,
         gender:"female",
-        price:58
+        price:58,
+        count:1
     },
     {
         id:7,
         gender:"female",
-        price:80
+        price:80,
+        count:1
     },
     {
         id:8,
         gender:"male",
-        price:65
+        price:65,
+        count:1
     },
     {
         id:9,
         gender:"male",
-        price:65
+        price:65,
+        count:1
     },
     {
         id:10,
         gender:"male",
-        price:65
+        price:65,
+        count:1
     },
     {
         id:11,
         gender:"male",
-        price:65
+        price:65,
+        count:1
     },
     {
         id:12,
         gender:"female",
-        price:65
+        price:65,
+        count:1
     }, 
 ]
 
