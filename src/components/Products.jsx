@@ -15,10 +15,10 @@ function Products({setAllProducts,allProducts,myProducts,basket}) {
             </div>}
             <div className='flex'>
                 {basket ? allProducts.map(item=>(
-                    <ProductItem key={item.id} id={item.id} gender = {item.gender} setAllProducts={setAllProducts} price = {item.price} allProducts={allProducts} basket/> 
+                    <ProductItem key={item.id} id={item.id} gender = {item.gender} setAllProducts={setAllProducts} count = {item.count} price = {item.price} allProducts={allProducts} basket/> 
                 ))
                 : myProducts.map(item =>(
-                    <ProductItem key={item.id} id={item.id} gender = {item.gender} price = {item.price} setAllProducts = {setAllProducts} allProducts={allProducts}/>
+                    <ProductItem key={item.id} id={item.id} gender = {item.gender} price = {item.price} setAllProducts = {setAllProducts} count = {item.count} allProducts={allProducts}/>
                 ))
                 }
                 
