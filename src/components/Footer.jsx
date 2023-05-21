@@ -5,7 +5,7 @@ function Footer() {
     <footer>
         <div className='inner-footer'>
             <div className='flex'>
-                <p>© 2021 All Rights Reserved By 
+                <p>© 2023 All Rights Reserved By 
                     <span className='orange'> Free Html Templates</span>
                     <br />
                     Distributed By 
