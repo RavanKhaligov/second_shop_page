@@ -9,7 +9,7 @@ function Footer() {
                     <span className='orange'> Free Html Templates</span>
                     <br />
                     Distributed By 
-                    <span className='orange'> ThemeWagon</span>
+                    <span className='orange'> Ravan</span>
                 </p>
             </div>
         </div>
